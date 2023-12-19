@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program</title>
+</head>
+<body>
+    <form>     
+   <label for="fname">Name</label> :
+   <input type="text" id="fname"  name="fname"><br><br>
+   <label for="email">Email</label>:
+   <input type="email" name="email" id="email"><br><br>
+   <label for="password">Type Password</label>:
+   <input type="password" name="psw1" id="psw1"><br><br>
+   <label for="password">Confirm Password</label>:
+   <input type="password" name="psw2" id="psw2"><br><br>
+   
+   <button onclick="validate()">Submit</button>
+</form>
+<script>
+let ps1= document.getElementById("psw1");
+let ps2= document.getElementById("psw2");
+function validate()
+{
+if(ps1.value==ps2.value)
+alert("Password matched")
+else
+alert("Password doesnot match")
+}
+</script>
+</body>
+</html>
